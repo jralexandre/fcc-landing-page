@@ -119,10 +119,12 @@ footer a:hover {
 }
 .grid {
   display: flex;
+  flex-direction: row;
   height: 80px;
 }
 
 .grid .material-icons {
+  display: block;
   font-size: 48px;
   color: #2286c3;
   width: 150px;
@@ -135,6 +137,7 @@ footer a:hover {
   flex-direction: column;
   justify-items: center;
   text-align: left;
+  width: 100%;
 }
 
 #pricing {
@@ -182,18 +185,18 @@ footer a:hover {
   background-color: #2286c3;
 }
 
+@media (max-width: 650px) {
+  #header,
+  #nav-bar > ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media(max-width: 650px) {
-    #header, #nav-bar > ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .logo > img {
-        margin: 0 auto;
-    }
+  .logo > img {
+    margin: 0 auto;
+  }
 
-    #hero {
-        margin-top: 100px;
-    }
+  #hero {
+    margin-top: 100px;
+  }
 }
